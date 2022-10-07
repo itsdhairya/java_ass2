@@ -1,8 +1,4 @@
 public class Car {
-    public enum CarType {
-        SUV, HATCHBACK, SEDAN, TRUCK;
-    }
-
     String manufacturer;
     int make;
     String model;
@@ -12,12 +8,12 @@ public class Car {
     CarType type;
 
     // constructor
-    public Car(String manufacturer, int make, String model, double basePrice, CarType type2) {
+    public Car(String manufacturer, int make, String model, double basePrice, CarType type) {
         this.manufacturer = manufacturer;
         this.make = make;
         this.model = model;
         this.basePrice = basePrice;
-        this.type = type2;
+        this.type = type;
         VI_NUMBER += 100;
         this.VIN = VI_NUMBER;
         this.VIN = this.VIN + 10;
@@ -53,9 +49,9 @@ public class Car {
     }
 
     // toString
-    public String toString() {
-        return "\n\nCar Details: \n Manufacturer: " + getManufacturer() + "\nMake:" + getMake() + "\nModel:"
-                + getModel() + "\nVIN:" + getVIN() + "\nVI_NUMBER:" + getVI_NUMBER() + "\nBase Price: " + getPrice()
-                + "\nCar Type:  " + getType();
+    public String toString()
+    {
+    return "\n\nCar Details: \n Manufacturer: "+getManufacturer()+"\nMake:"+getMake()+"\nModel:"+getModel()+"\nVIN:"+getVIN()
+    +"\nVI_NUMBER:"+getVI_NUMBER()+"\nBase Price: "+getPrice()+"\nCar Type: " +getType();
     }
 }

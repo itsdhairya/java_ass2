@@ -1,4 +1,6 @@
-public enum CarType { 
-    SUV,HATCHBACK,SEDAN,TRUCK;  
+public enum CarType {
+    HATCHBACK,
+    SUV,
+    SEDAN,
+    TRUCK;
     }
-    

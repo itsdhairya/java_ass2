@@ -1,20 +1,20 @@
 import java.util.ArrayList;
 
-public class Dealership {
+public class DEALERSHIP { 
     static ArrayList<Car> carList;
     String id;
     String name;
     String address;
 
-    // constructor
-    public Dealership(String id, String name, String address) {
+    // constructor.
+    public DEALERSHIP(String id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;
         carList = new ArrayList<Car>();
     }
 
-    public void addCar(String manufacturer, int make, String model, double basePrice, CarType type)
+    public void addCar(String manufacturer, int make, String model, double basePrice, Cartype type)
     {
         Car C = new Car(manufacturer, make, model, basePrice, type);
         carList.add(C);
