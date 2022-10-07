@@ -1,40 +1,40 @@
-// import java.lang.StackWalker.Option;
-// import java.util.ArrayList;
-// import java.util.List;
+// // import java.lang.StackWalker.Option;
+// // import java.util.ArrayList;
+// // import java.util.List;
 
-public class dhairya_018_lab2 {
+// public class dhairya_018_lab2 {
    
-    public static enum CarType {
+//     public static enum CarType {
 
-        Sedan,
-        Coupe,
-        Van,
-        SUV;
+//         Sedan,
+//         Coupe,
+//         Van,
+//         SUV;
 
-        public static dhairya_018_lab2.CarType valueOf(dhairya_018_lab2.CarType type) {
-            return null;
-        }
-      }
+//         public static int valueOf(dhairya_018_lab2.CarType type) {
+//             return 1011;
+//         }
+//       }
 
-    private String man;
-    private int year;
-    private String model;
-    private int vin;
-    private double price;
-    private CarType type;
+//     private String man;
+//     private int year;
+//     private String model;
+//     private int vin;
+//     private double price;
+//     private CarType type;
 
-    public dhairya_018_lab2 (String man, int year, String model, int vin, double price, CarType type){
-         this.man = man;
-         this.year = year;
-         this.model = model;
-         this.vin = vin;
-         this.price = price;
-         this.type = CarType.valueOf(type);    }
+//     public dhairya_018_lab2 (String man, int year, String model, int vin, double price, CarType type){
+//          this.man = man;
+//          this.year = year;
+//          this.model = model;
+//          this.vin = vin;
+//          this.price = price;
+//          this.type = CarType.valueOf(type);    }
    
    
-    public String toString(){
-         return "Manufacturer Name: "+man+" year: "+year+" model: "+model+" price: $"+price+"Car Type: "+type;
-    }
+//     public String toString(){
+//          return "Manufacturer Name: "+man+" year: "+year+" model: "+model+" price: $"+price+"Car Type: "+type;
+//     }
    
          
-}
+// }

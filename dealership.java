@@ -1,11 +1,11 @@
 import java.util.ArrayList; 
-public class dealership { 
+public class Dealership { 
 static ArrayList<Car> carList; 
 String id; 
 String name; 
 String address; 
 //constructor 
-public dealership(String id,String name,String address) 
+public Dealership(String id,String name,String address) 
 { 
  this.id=id; 
  this.name=name; 
@@ -44,13 +44,13 @@ public void showCars(String manufacturer,int make,double basePrice) {
  for (int i = 0; i < carList.size(); i++) 
   
  // Printing and display the elements in ArrayList  
- if(carList.get(i).getManufacturer().equalsIgnoreCase(manufacturer) &&carList.get(i).getMake()==make && carList.get(i).getPrice()<=basePrice)
+ if(carList.get(i).getManufacturer().equalsIgnoreCase(manufacturer) &&  carList.get(i).getMake()==make && carList.get(i).getPrice()<=basePrice) 
  { 
  System.out.print(carList.get(i));  
  }  
   
 } 
-//To get the Inputs from  
+//getters 
 public String getID() 
 { 
  return this.id; 
@@ -66,6 +66,5 @@ public String getAddress()
 //toString 
 public String toString() 
 { 
-    return "\n\nDealerID: "+getID()+"\nDealerName:"+getName()+"\nDealerAddress:"+getAddress(); 
-} 
-}
+return "\n\nDealerID: "+getID()+"\nDealerName:"+getName()+"\nDealerAddress:"+getAddress(); } 
+}//end Class Dealership
